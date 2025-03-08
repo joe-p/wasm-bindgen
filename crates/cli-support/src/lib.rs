@@ -321,10 +321,10 @@ impl Bindgen {
         };
 
         // Enable reference type transformations if the module is already using it.
-        if let Ok(true) = wasm_bindgen_wasm_conventions::target_feature(&module, "reference-types")
-        {
-            self.externref = true;
-        }
+        //if let Ok(true) = wasm_bindgen_wasm_conventions::target_feature(&module, "reference-types")
+        //{
+        //    self.externref = true;
+        //}
 
         // Enable multivalue transformations if the module is already using it.
         if let Ok(true) = wasm_bindgen_wasm_conventions::target_feature(&module, "multivalue") {
